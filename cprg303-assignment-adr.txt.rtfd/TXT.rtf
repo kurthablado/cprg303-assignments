@@ -1,0 +1,682 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\fswiss\fcharset0 Arial-ItalicMT;\f4\fswiss\fcharset0 Arial-BoldItalicMT;\f5\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl337\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 \expnd0\expndtw0\kerning0
+\
+\'a0
+\f1\b0 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 Requirement 1:\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 Decision Title
+\f1\b0 : Offline Mode App Integration \
+\'a0\
+
+\f0\b Context
+\f1\b0 : Creating an offline mode for customers to browse products and view order history, even if they are not connected to the internet.\
+
+\f0\b \'a0
+\f1\b0 \
+
+\f0\b Options Considered
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Application content can only be viewed when connected to the internet.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Products and order history are accessible to view without the internet.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Support both an online and offline version for browsing retail company products.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Decision
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The decision is made to limit app access to online use only.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Rationale
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 In the context of online shopping, product can move quickly, and product availability should be up-to-date to enhance customer experience.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 If a user shops offline, synchronizing with the server when internet access become available may affect performance as it may need to update the app every time it is opened. \
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 If a user shops offline and discovers a product is out-of-stock when internet accessibility is available, it may negatively impact customer experience.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 If a user is trying to access the application offline to track the status of their deliveries, it\'92s unlikely they will receive up-to-date information.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Consequences
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Users will need to have internet access to fully utilize the shopping application.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 App performance may be better off if it does not need to sync data once internet is available.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Less strain on data servers to store offline data.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Follow-Up Actions
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Identify data servers that can deliver product information quickly when internet access is available.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Ensure real-time services like updating inventory, tracking orders, and viewing order history are up-to-date every time the user opens the app. \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\sl586\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\
+
+\f0\b \'a0
+\f1\b0 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 Requirement 2:\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 Decision Title
+\f1\b0 : Inclusion of Push Notifications to Notify Customers about Product Updates.\
+
+\f0\b \'a0
+\f1\b0 \
+
+\f0\b Context
+\f1\b0 : Having push notifications enabled to inform customers about updates with their orders, the arrival of new products, and exclusive offers.\
+
+\f0\b \'a0
+\f1\b0 \
+
+\f0\b Options Considered
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Designing the application to integrate with existing push notification services to deliver notifications.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Restricting the application from delivering push notifications to users.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Allowing users to opt-in and customize which push notifications they would like to receive.\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+
+\f0\b Decision
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The decision is made to allow users to opt-in to push notifications and to customize what they want to receive notifications about.\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+
+\f0\b Rationale
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Push notifications are the ideal tool to keep customers informed of up-to-date news and exciting offers.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Customers may also want to know information and updates about the status of their order, or if new products are announced. \
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Allowing customers to opt-in to notifications ensures limitation with advertising fatigue, which may come when apps send out consistent push notifications and causes users to lose interest and engagement with the application. \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+
+\f0\b Consequences
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 App will need to be integrated with existing push notification systems on the customers desired device OS. \
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 App will need to adjust to any customizations or changes made to the delivery frequency and content of push notifications as specified by the user. \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+
+\f0\b \'a0
+\f1\b0 \
+
+\f0\b Follow-Up Actions
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Designing the app to work alongside existing push notification services that handle the delivery of notifications.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Programming application to deliver notifications to users as per their customization choices.\
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Creation of a system that places all potential push notifications into specified buckets of categories such as 
+\f3\i product updates, exclusive offers, new product arrivals, 
+\f1\i0 and 
+\f3\i order updates
+\f1\i0 .\uc0\u8232 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 Requirement 3:\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 Decision Title
+\f1\b0 : Integration of Various Payment Gateways for Secure and Convenient Transactions.\
+\'a0\
+
+\f0\b Context
+\f1\b0 : Integrating access to a secure and convenient payment gateway to ensure ease of use and compatibility with the app\'92s target platform.\
+\'a0\
+
+\f0\b Options Considered
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+\cf2 \uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f4\i\b\fs29\fsmilli14667 Plaid API
+\f1\i0\b0  - a financial technology company that provides APIs that can connect and verify bank accounts, as well as facilitate financial transactions [1]. Plaid uses encryption and data tokenization for their security measures [1].\uc0\u8232 \u8232 \
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f4\i\b\fs29\fsmilli14667 PayPal Payflow \'96 
+\f1\i0\b0 a payment gateway service that is straightforward to use, works internationally, and secured with encryption and fraud detection systems [2]. They also offer a buyer protection program which can help resolve any customer disputes and provide refunds in the event of an unauthorized transaction [2].\uc0\u8232 \u8232 \
+\uc0\u9679 
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0 
+\f4\i\b\fs29\fsmilli14667 Shopify Payments
+\f1\i0\b0  \'96 Shopify Payments is a payment gateway services built directly into the Shopify platform, allowing customers to easily tracks orders and the integration of point-of-sale hardware for both online and in-store retail [3]. Shopify payments use fraud detection software and adhere to PCI DSS standards to reduce potential fraud and security threats [3].\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Decision
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The decision was made to integrate Plaid API as the payment gateway service for retail company\'92s checkout.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Rationale
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 While all options considered had robust security measures in place to protect a customer\'92s personal and financial information, Plaid was the only service to offer a payment gateway API that easily integrates into the application, \
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 While timelessly credible, the Shopify Payments gateway is only seamlessly integrated for business websites using the Shopify platform. If the retail company chooses to develop their store outside of the Shopify platform, there are no guarantees the Shopify Payments gateway will be compatible. \
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 PayPal Payflow is also very credible as a payment gateway service. However, there are some issues and concerns around transaction fees, as they charge per payment processed. It may be a suitable option for a business with low traffic, but the cost will add up as scalability of the business grows. Additionally, while their buyer protection program offers security and peace of mind to consumers, it may result in a loss of revenue for the merchant if there are numerous disputes that occur.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Consequences
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Using Plaid API as a payment gateway service will allow for more customization as it pertains to the online retailer\'92s website, such as tailoring the experience of the checkout process.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Plaid offers APIs and SDKs that allow for easy integration of their services into websites and applications, which may optimize the development process.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 However, if a customer holds a bank account that is not supported by Plaid, it may limit the range of consumers they can appeal to. \
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Follow-Up Actions
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Deciding on a Plaid API that integrates well with the retail company\'92s application.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Development of a loyalty program for discounts that integrates with the Plaid API. \
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Integration of the Plaid API to allow provide information around tracking orders and viewing order history. \
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Selecting a Plaid API that seamlessly integrates into the app that also processes information about returns and exchanges. \uc0\u8232 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 Requirement 4:\
+\pard\pardeftab720\sl337\sa320\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 Decision title:
+\f1\b0  Track User Behaviour to Collect Analytics\
+
+\f0\b Context: 
+\f1\b0 Improve app\'92s performance and user experience by tracking user behaviour. This includes monitoring product reviews, purchases and interactions with the loyalty program. The goal is to select an analytics tool or service that offers thorough insights and metrics.\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Options Considered:
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Google Analytics \'96 
+\f1\b0 provides valuable insights into how users are interacting with their digital assets and marketing [4]. Google Analytics can be used to improve user experience, with heavy emphasis on increasing website traffic and ultimately drive more sales and revenue while easily integrating with other Google products. \
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Mixpanel \'96 
+\f1\b0 a powerful real-time analytics platform that helps companies measure and optimize user engagement. It\'92s an app for tracking customer behaviour and it provides great insights into product usage and user behaviour to help make data-driven decisions and improve products [5].\
+\pard\pardeftab720\li960\sl337\sa320\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Adobe Analytics \'96 
+\f1\b0 a tool for businesses to gain insights into customer data, personalize experiences and optimize returns. It provides advanced statistical models and AI features for anomaly detection, predictive analytics, and refining marketing campaigns [6].\
+\pard\pardeftab720\li960\sl337\sa320\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Amplitude \'96 
+\f1\b0 A product created for product makers, Amplitude goes beyond surface-level data to provide an in-depth analysis of how users interact with the product by making actionable strategies from insights to improve engagement, increase conversion rates and secure long-term customer loyalty [7].\
+\pard\pardeftab720\li960\sl337\sa320\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Decision: 
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The team decided to implement 
+\f0\b Mixpanel
+\f1\b0  as the primary analytics tool for tracking user behaviour in the retail app.\
+\pard\pardeftab720\li960\sl337\sa320\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Rationale:
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 It\'92s highly specialized in tracking and analyzing user behaviour, which aligns perfectly with the company\'92s objectives.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Provides detailed event tracking capabilities, allowing the team to monitor specific actions such as product reviews and purchases.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Offers advanced user segmentation to understand different user groups and tailor experiences accordingly. \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\sl337\partightenfactor0
+
+\f0\b \cf2 \
+\'a0
+\f1\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Consequences:
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Depending on the chosen plan, Mix panel can present a significant financial investment.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Need to ensure compliance with regional and federal data privacy regulations when collecting and analyzing user data\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The interface is extensive with many features and could be challenging to train with the need to continue.\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Follow-up Actions: 
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Develop a detailed implementation plan, including timelines, responsible parties, and key milestones for integration.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Conduct training sessions for the team to ensure they are proficient in using and interpreting Mixpanel.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Set up monitoring and reporting schedules to track user behaviour and app performance continuously. \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 Requirement 5:\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 Decision Title
+\f1\b0 : Display Product Images and Deciding an Image Storage Solution\
+\'a0\
+
+\f0\b Context
+\f1\b0 : Develop an app that will store images files that correlate to the inventory by images in varying sizes and resolutions. \
+\'a0\
+
+\f0\b Options Considered
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Local Storage \'96 
+\f1\b0 Hard drives (HDDs) or solid-state drives (SSDs), can offer high read and write speeds, especially when dealing with large datasets or require low latency [8]. This would be ideal for high resolution file types.\
+\pard\pardeftab720\li960\sa213\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Cloud Storage \'96 
+\f1\b0 Enables organizations to store, access, and maintain data so that a user is not required to own or operate their own data centres. Cloud storage is scalable, allowing organizations to expand or reduce their data footprint depending on their needs [9].\
+\pard\pardeftab720\li960\sa213\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Hybrid Solution \'96 
+\f1\b0 By combining private (local) and public (cloud) storage, hybrid storage combines agility and scalability with control and security. It is also the cheaper route over building physical data centres for storage. \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Decision
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The decision was made to implement a Hybrid solution that combines local caching and cloud storage. \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Rationale
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Local caching or storage ensures quick access to frequently viewed images while reducing load times and dependency on network (a condition specified by the customer.)\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The added option of cloud storage allows the user/customer to handle many images efficiently without worrying about device storage limitations.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 While this option may be more challenging to onboard, the hybrid approach enhances resource usage and can be much more cost-effective in the long run; \'93
+\f3\i one of the greatest costs when operating on premises data centers is the overhead of energy consumption
+\f1\i0 \'94 [9].\'a0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Consequences
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Faster image load times\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Reduce strain on user devices \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Follow-Up Actions
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sl337\sa320\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Employ image optimization techniques like compression and lazy loading\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Conduct performance testing regularly to ensure images load quickly and smoothly\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Evaluate the app under different network conditions and device types\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Monitor image loading times and user feedback\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 Requirement 6:\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 Decision Title
+\f1\b0 : Scalability of Application to Support International Customers\
+\'a0\
+
+\f0\b Context
+\f1\b0 : Support international customers effectively, the app must be able to handle increased traffic, provide relevant, localized content and maintain optimal performance across different geographic locations.\'a0 \
+\'a0\
+
+\f0\b Options Considered
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Multi-CDN (Multiple Content Delivery Network) -
+\f1\b0 \'a0 involves using multiple CDN providers at the same time to deliver content. This approach leverages the strengths of various CDNs to enhance performance, reliability and coverage. \
+\pard\pardeftab720\li960\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Regional Caching \'96
+\f1\b0  placing caches (servers that store copies of frequently accessed data) in specific geographic regions to reduce latency and improve access times for users in those areas. Can be accomplished with a single CDN.\
+\pard\pardeftab720\li960\partightenfactor0
+\cf2 \'a0\
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f0\b\fs29\fsmilli14667 Hybrid CDN
+\f1\b0  \'96 supplements existing content delivery services with private CDN components to boost efficiency and performance [10].\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Decision
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The decision was made to apply a Hybrid CDN that combines multiple CDNs and regional caching.\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Rationale
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 The hybrid will ensure quick access to content and improving load times for users in all regions\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Multi CDN allows for centralized management, while regional caching handles local spikes in traffic effectively\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Regional caching provides redundancy that will reduce the potential for failure\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Consequences
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Faster content delivery, leading to a better user experience\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Improved reliability amongst all users\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Scalable solution capable of handling global traffic\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 Follow-Up Actions
+\f1\b0 \
+\pard\pardeftab720\li960\fi-480\sa213\partightenfactor0
+
+\f5 \cf2 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Identify CDN providers that can provide the best performance in different regions by specific strength. Look to regional streaming services for guidance.\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Configure Multi CDN and regional caching\
+
+\f5 \'b7
+\f2\fs18\fsmilli9333 \'a0\'a0\'a0\'a0\'a0\'a0 
+\f1\fs29\fsmilli14667 Continuously monitor the performance of both CDNs and regional caches\
+\pard\pardeftab720\sl337\partightenfactor0
+
+\f0\b \cf2 \
+\'a0
+\f1\b0 \
+\pard\pardeftab720\sl490\sa160\partightenfactor0
+
+\fs42\fsmilli21333 \cf2 References\
+\pard\pardeftab720\sl337\partightenfactor0
+
+\fs29\fsmilli14667 \cf2 [1] Plaid, \'93Why Plaid.\'94 plaid.com. https://plaid.com/why-plaid/ (accessed June 14, 2024).\
+\'a0\
+[2] PayPal, \'93Payflow Payment Gateway.\'94 paypal.com. https://www.paypal.com/us/webapps/mpp/payflow-payment-gateway (accessed June 14, 2024).\
+\'a0\
+[3] L. Hoory, \'93Shopify Payments Review 2024: Features, Pros & Cons.\'94 forbes.com. https://www.forbes.com/advisor/ca/business/software/shopify-payments-review/ (accessed June 14, 2024).\
+\'a0\
+[4] "What is Google Analytics? Importance, Benefits, and Reasons to Use It." Tagmate. Accessed:\'a0 Jun. 15, 2023. [Online]. Available: https://www.tagmate.app/blogs/what-is-google-analytics-importance-benefits-and-reasons-to-use-it \
+[5] "Mixpanel Analytics: What is it and How it Compares to Other Tools." Userpilot. Accessed: Jun. 15, 2024. [Online]. Available: https://userpilot.com/blog/mixpanel-analytics/#:~:text=Mixpanel%20is%20a%20powerful%20real,decisions%20and%20improve%20your%20products\
+\'a0\
+[6] \'93What is Adobe Analytics Used For? A Comprehensive Guide.\'94 Scandiweb Blog. Accessed: Jun. 15, 2024. [Online]. Available: https://scandiweb.com/blog/what-is-adobe-analytics-used-for-a-comprehensive-guide/#:~:text=Adobe%20Analytics%20is%20a%20powerful,analytics%2C%20and%20refining%20marketing%20campaigns \
+\'a0\
+[7] A. Shad. \'93Amplitude Analytics: Is It Worth the Money or There Is a Better Alternative?\'94 Userpilot. Accessed: Jun. 16, 2024. [Online]. Available: https://userpilot.com/blog/amplitude-analytics/#:~:text=Source%3A%20Amplitude.-,Why%20do%20product%20and%20marketing%20teams%20need%20Amplitude%3F,informed%20decisions%20to%20fuel%20growth \
+\'a0\
+[8] J. Moss. \'93The Advantages & Disadvantages of Choosing Local Storage.\'94 xByte Technologies. Accessed: Jun. 16, 2024. [Online]. Available: https://www.xbyte.com/blog/the-advantages-disadvantages-of-choosing-local-storage/#:~:text=Performance%3A%20Local%20storage%2C%20such%20as,need%20to%20process%20data%20quickly \
+\'a0\
+[9] \'93What is Cloud Storage.\'94 Google Cloud. Accessed: Jun. 16, 2024. [Online]. Available: https://cloud.google.com/learn/what-is-cloud-storage#:~:text=Cloud%20Storage%20enables%20organizations%20to,data%20footprint%20depending%20on%20need \
+\'a0\
+\
+\'a0\
+[10] \'93A Hybrid CDN: Optimize Content Delivery with Varnish Software.\'94 Varnish Software. Accessed: Jun. 16, 2024. [Online]. Available: https://www.varnish-software.com/solutions/hybrid-cdn/#:~:text=A%20hybrid%20CDN%20supplements%20existing,including%20deep%20in%20ISP%20networks \
+\'a0\
+\'a0\
+\'a0\
+\'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\
+}
